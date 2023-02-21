@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookly</title>
+    <link rel="icon" href="image/book-solid.svg">
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <!-- swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- <header> -->
+    <div class="header-1">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between my-3">
+                <div class="col-5 col-md-3">
+                    <div class="brand">
+                        <i class="fa-solid fa-book fs-3" style="color: #27ae60;"></i>
+                        <span class="fs-2 fw-bold" style="color: #444;">Bookly</span>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-md-flex align-items-center">
+                    <div class="input-group input-group-lg">
+                        <input type="search" class="form-control" placeholder="Search here..." aria-label="Username"
+                            aria-describedby="basic-addon1">
+                        <span class="input-group-text bg-white" id="basic-addon1">
+                            <i class="fa-solid fa-magnifying-glass fs-3"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-7 col-md-3 d-flex justify-content-end">
+                    <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass fs-3 d-inline d-md-none"></i>
+                        <i class="fa-solid fa-heart fs-3"></i>
+                        <i class="fa-solid fa-cart-shopping fs-3"></i>
+                        <i class="fa-solid fa-user fs-3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md py-0">
+        <div class="container-fluid p-0">
+            <button
+                class="navbar-toggler d-md-none position-fixed bottom-0 border-0 rounded-0 w-100 d-flex justify-content-center"
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <ul class="navbar-nav text-center d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-5" aria-current="page" href="#main-card" style="width: 60px;">
+                            <i class="fa-solid fa-house-chimney text-white"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-5" href="#" style="width: 60px;">
+                            <i class="fa-solid fa-list"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-5" href="#" style="width: 60px;">
+                            <i class="fa-solid fa-tags"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-5" href="#" style="width: 60px;">
+                            <i class="fa-solid fa-comments"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-5" href="#" style="width: 60px;">
+                            <i class="fa-solid fa-blog"></i>
+                        </a>
+                    </li>
+                </ul>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav largeNav text-center w-100 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-5 me-3" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-5 me-3" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-5 me-3" href="#">Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-5 me-3" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-5" href="#">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- </header> -->
+
+
+    <section class="container-fluid" style="background: url(image/banner-bg.jpg);">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 text-center text-lg-start col-lg-6 py-5">
+                    <div class="card border-0 w-100 bg-transparent main-card" id="main-card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h3 class="card-title">Upto 75% Off</h3>
+                            <p class="card-text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Maxime Nam
+                                Quidem Obcaecati Vero Atque Quos Aperiam, Corrupti Blanditiis Ex! Sit?</p>
+                            <button class="btn btn-lg">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 py-5">
+                    <div class="swiper swiper-1 w-100">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="image/book-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/book-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/book-3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/book-4.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/book-5.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/book-6.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/book-7.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/book-8.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/book-9.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/book-10.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stand">
+                        <img src="image/stand.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <div class="row section1 py-5">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 rounded-0 px-2">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                        <i class="fas fa-paper-plane me-3"></i>
+                        <div class="text">
+                            <h5 class="card-title">Free Shipping</h5>
+                            <p class="card-text">Order Over $100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 rounded-0 px-2">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                        <i class="fas fa-lock me-3"></i>
+                        <div class="text">
+                            <h5 class="card-title">Secure Payment</h5>
+                            <p class="card-text">100 Secure Payment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 rounded-0  px-2">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                        <i class="fas fa-redo-alt me-3"></i>
+                        <div class="text">
+                            <h5 class="card-title">Easy Returns</h5>
+                            <p class="card-text">10 Days Returns</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card border-0 rounded-0 px-2">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                        <i class="fas fa-headset me-3"></i>
+                        <div class="text">
+                            <h5 class="card-title">24/7 Support</h5>
+                            <p class="card-text">Call Us Anytime</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container border-top my-5 px-5 px-md-0">
+        <div class="row text-center">
+            <div class="col">
+                <span class="featuredHeader border py-1 px-3">Featured Books</span>
+            </div>
+        </div>
+        <div class="row featured-2 py-3">
+            <div class="col">
+                <div class="swiper w-100 swiper-2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center border-0 rounded-0 py-2"
+                                style="width: 17rem;">
+                                <div class="book-image w-100">
+                                    <div class="book-icons border-bottom w-100">
+                                        <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                                        <i class="fa-solid fa-heart fs-4"></i>
+                                        <i class="fa-solid fa-eye fs-4"></i>
+                                    </div>
+                                    <div class="image"
+                                        style="background: linear-gradient(15deg, #eee 30%, #fff 30.1%);">
+                                        <img src="image/book-1.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-4 fw-bold">Featured Books</h5>
+                                    <p class="card-text"><span class=" fs-4">$15.99</span> <span
+                                            class="text-decoration-line-through">$20.99</span></p>
+                                    <button class="btn btn-lg">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <div class="book-image w-100">
+                                    <div class="book-icons border-bottom w-100">
+                                        <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                                        <i class="fa-solid fa-heart fs-4"></i>
+                                        <i class="fa-solid fa-eye fs-4"></i>
+                                    </div>
+                                    <div class="image"
+                                        style="background: linear-gradient(15deg, #eee 30%, #fff 30.1%);">
+                                        <img src="image/book-2.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-4 fw-bold">Featured Books</h5>
+                                    <p class="card-text"><span class=" fs-4">$15.99</span> <span
+                                            class="text-decoration-line-through">$20.99</span></p>
+                                    <button class="btn btn-lg">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <div class="book-image w-100">
+                                    <div class="book-icons border-bottom w-100">
+                                        <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                                        <i class="fa-solid fa-heart fs-4"></i>
+                                        <i class="fa-solid fa-eye fs-4"></i>
+                                    </div>
+                                    <div class="image"
+                                        style="background: linear-gradient(15deg, #eee 30%, #fff 30.1%);">
+                                        <img src="image/book-3.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-4 fw-bold">Featured Books</h5>
+                                    <p class="card-text"><span class=" fs-4">$15.99</span> <span
+                                            class="text-decoration-line-through">$20.99</span></p>
+                                    <button class="btn btn-lg">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <div class="book-image w-100">
+                                    <div class="book-icons border-bottom w-100">
+                                        <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                                        <i class="fa-solid fa-heart fs-4"></i>
+                                        <i class="fa-solid fa-eye fs-4"></i>
+                                    </div>
+                                    <div class="image"
+                                        style="background: linear-gradient(15deg, #eee 30%, #fff 30.1%);">
+                                        <img src="image/book-4.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-4 fw-bold">Featured Books</h5>
+                                    <p class="card-text"><span class=" fs-4">$15.99</span> <span
+                                            class="text-decoration-line-through">$20.99</span></p>
+                                    <button class="btn btn-lg">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <div class="book-image w-100">
+                                    <div class="book-icons border-bottom w-100">
+                                        <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                                        <i class="fa-solid fa-heart fs-4"></i>
+                                        <i class="fa-solid fa-eye fs-4"></i>
+                                    </div>
+                                    <div class="image"
+                                        style="background: linear-gradient(15deg, #eee 30%, #fff 30.1%);">
+                                        <img src="image/book-5.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-4 fw-bold">Featured Books</h5>
+                                    <p class="card-text"><span class=" fs-4">$15.99</span> <span
+                                            class="text-decoration-line-through">$20.99</span></p>
+                                    <button class="btn btn-lg">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <div class="book-image w-100">
+                                    <div class="book-icons border-bottom w-100">
+                                        <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                                        <i class="fa-solid fa-heart fs-4"></i>
+                                        <i class="fa-solid fa-eye fs-4"></i>
+                                    </div>
+                                    <div class="image"
+                                        style="background: linear-gradient(15deg, #eee 30%, #fff 30.1%);">
+                                        <img src="image/book-6.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-4 fw-bold">Featured Books</h5>
+                                    <p class="card-text"><span class=" fs-4">$15.99</span> <span
+                                            class="text-decoration-line-through">$20.99</span></p>
+                                    <button class="btn btn-lg">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <div class="book-image w-100">
+                                    <div class="book-icons border-bottom w-100">
+                                        <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                                        <i class="fa-solid fa-heart fs-4"></i>
+                                        <i class="fa-solid fa-eye fs-4"></i>
+                                    </div>
+                                    <div class="image"
+                                        style="background: linear-gradient(15deg, #eee 30%, #fff 30.1%);">
+                                        <img src="image/book-7.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-4 fw-bold">Featured Books</h5>
+                                    <p class="card-text"><span class=" fs-4">$15.99</span> <span
+                                            class="text-decoration-line-through">$20.99</span></p>
+                                    <button class="btn btn-lg">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <div class="book-image w-100">
+                                    <div class="book-icons border-bottom w-100">
+                                        <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                                        <i class="fa-solid fa-heart fs-4"></i>
+                                        <i class="fa-solid fa-eye fs-4"></i>
+                                    </div>
+                                    <div class="image"
+                                        style="background: linear-gradient(15deg, #eee 30%, #fff 30.1%);">
+                                        <img src="image/book-8.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-4 fw-bold">Featured Books</h5>
+                                    <p class="card-text"><span class=" fs-4">$15.99</span> <span
+                                            class="text-decoration-line-through">$20.99</span></p>
+                                    <button class="btn btn-lg">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <div class="book-image w-100">
+                                    <div class="book-icons border-bottom w-100">
+                                        <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                                        <i class="fa-solid fa-heart fs-4"></i>
+                                        <i class="fa-solid fa-eye fs-4"></i>
+                                    </div>
+                                    <div class="image"
+                                        style="background: linear-gradient(15deg, #eee 30%, #fff 30.1%);">
+                                        <img src="image/book-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-4 fw-bold">Featured Books</h5>
+                                    <p class="card-text"><span class=" fs-4">$15.99</span> <span
+                                            class="text-decoration-line-through">$20.99</span></p>
+                                    <button class="btn btn-lg">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <div class="book-image w-100">
+                                    <div class="book-icons border-bottom w-100">
+                                        <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                                        <i class="fa-solid fa-heart fs-4"></i>
+                                        <i class="fa-solid fa-eye fs-4"></i>
+                                    </div>
+                                    <div class="image"
+                                        style="background: linear-gradient(15deg, #eee 30%, #fff 30.1%);">
+                                        <img src="image/book-10.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-4 fw-bold">Featured Books</h5>
+                                    <p class="card-text"><span class=" fs-4">$15.99</span> <span
+                                            class="text-decoration-line-through">$20.99</span></p>
+                                    <button class="btn btn-lg">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid"
+        style="background: url(image/letter-bg.jpg);background-size: cover; height: 350px;">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100 text-center">
+                <div class="col-10 offset-1 offset-md-7 col-md-5">
+                    <form>
+                        <div class="mb-3">
+                            <h6 class="text-white fs-4 mb-4">Subscribe For Latest Updates</h6>
+                            <input type="email" class="form-control py-2" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter Your Email">
+                        </div>
+                        <button type="submit" class="btn py-2 px-5 fw-bold subBtn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container border-top mb-3" style="margin-top:70px;">
+        <div class="row text-center">
+            <div class="col">
+                <span class="featuredHeader border py-1 px-3">New Arrivals</span>
+            </div>
+        </div>
+
+        <div class="row newArrivals my-3">
+            <div class="col">
+                <div class="swiper w-100 swiper-3 py-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card  border-0 rounded-0 py-3">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="image/book-1.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">New Arrivals</h5>
+                                            <p class="card-text"><span class="span1">$15.99</span> <span
+                                                    class="text-decoration-line-through">$20.99</span></p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card  border-0 rounded-0 py-3">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="image/book-2.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">New Arrivals</h5>
+                                            <p class="card-text"><span class="span1">$15.99</span> <span
+                                                    class="text-decoration-line-through">$20.99</span></p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card  border-0 rounded-0 py-3">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="image/book-3.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">New Arrivals</h5>
+                                            <p class="card-text"><span class="span1">$15.99</span> <span
+                                                    class="text-decoration-line-through">$20.99</span></p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card  border-0 rounded-0 py-3">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="image/book-4.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">New Arrivals</h5>
+                                            <p class="card-text"><span class="span1">$15.99</span> <span
+                                                    class="text-decoration-line-through">$20.99</span></p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card  border-0 rounded-0 py-3">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="image/book-5.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">New Arrivals</h5>
+                                            <p class="card-text"><span class="span1">$15.99</span> <span
+                                                    class="text-decoration-line-through">$20.99</span></p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row newArrivals">
+            <div class="col">
+                <div class="swiper w-100 swiper-3 py-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card  border-0 rounded-0 py-3">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="image/book-6.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">New Arrivals</h5>
+                                            <p class="card-text"><span class="span1">$15.99</span> <span
+                                                    class="text-decoration-line-through">$20.99</span></p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card  border-0 rounded-0 py-3">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="image/book-7.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">New Arrivals</h5>
+                                            <p class="card-text"><span class="span1">$15.99</span> <span
+                                                    class="text-decoration-line-through">$20.99</span></p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card  border-0 rounded-0 py-3">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="image/book-8.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">New Arrivals</h5>
+                                            <p class="card-text"><span class="span1">$15.99</span> <span
+                                                    class="text-decoration-line-through">$20.99</span></p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card  border-0 rounded-0 py-3">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="image/book-9.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">New Arrivals</h5>
+                                            <p class="card-text"><span class="span1">$15.99</span> <span
+                                                    class="text-decoration-line-through">$20.99</span></p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card  border-0 rounded-0 py-3">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <img src="image/book-10.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">New Arrivals</h5>
+                                            <p class="card-text"><span class="span1">$15.99</span> <span
+                                                    class="text-decoration-line-through">$20.99</span></p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid" style="background-color:#f3f3f3;margin: 40px 0 80px 0;">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 text-center text-lg-start col-lg-6 py-4">
+                    <div class="card border-0 w-100 bg-transparent main-card" id="main-card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-subtitle">Deal Of The Day</h5>
+                            <h3 class="card-title">Upto 75% Off</h3>
+                            <p class="card-text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Maxime Nam
+                                Quidem Obcaecati Vero Atque Quos Aperiam, Corrupti Blanditiis Ex! Sit?</p>
+                            <button class="btn btn-lg">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 py-4">
+                    <img src="image/deal-img.jpg" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container reviews border-top my-5 px-5 px-md-0">
+        <div class="row text-center">
+            <div class="col">
+                <span class="reviewsHeader border py-1 px-3">Client's Reviews</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="swiper w-100 swiper-2" style="height: 350px;">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center justify-content-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <!-- <div class="image"> -->
+                                <img src="image/pic-1.png" class="card-img-top mt-3" alt="...">
+                                <!-- </div> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">John Deo</h5>
+                                    <p class="card-text">
+                                        Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. A Aliquam Sunt Non
+                                        Libero, Similique Odio?
+                                    </p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center justify-content-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <!-- <div class="image"> -->
+                                <img src="image/pic-2.png" class="card-img-top mt-3" alt="...">
+                                <!-- </div> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Diana Michael</h5>
+                                    <p class="card-text">
+                                        Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. A Aliquam Sunt Non
+                                        Libero, Similique Odio?
+                                    </p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center justify-content-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <!-- <div class="image"> -->
+                                <img src="image/pic-3.png" class="card-img-top mt-3" alt="...">
+                                <!-- </div> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">John Deo</h5>
+                                    <p class="card-text">
+                                        Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. A Aliquam Sunt Non
+                                        Libero, Similique Odio?
+                                    </p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center justify-content-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <!-- <div class="image"> -->
+                                <img src="image/pic-4.png" class="card-img-top mt-3" alt="...">
+                                <!-- </div> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Diana Michael</h5>
+                                    <p class="card-text">
+                                        Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. A Aliquam Sunt Non
+                                        Libero, Similique Odio?
+                                    </p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center justify-content-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <!-- <div class="image"> -->
+                                <img src="image/pic-5.png" class="card-img-top mt-3" alt="...">
+                                <!-- </div> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">John Deo</h5>
+                                    <p class="card-text">
+                                        Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. A Aliquam Sunt Non
+                                        Libero, Similique Odio?
+                                    </p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card text-center d-flex align-items-center justify-content-center border-0 rounded-0"
+                                style="width: 17rem;">
+                                <!-- <div class="image"> -->
+                                <img src="image/pic-6.png" class="card-img-top mt-3" alt="...">
+                                <!-- </div> -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Diana Michael</h5>
+                                    <p class="card-text">
+                                        Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. A Aliquam Sunt Non
+                                        Libero, Similique Odio?
+                                    </p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="container border-top mb-5 px-5 px-md-0" style="margin-top:80px;">
+        <div class="row text-center">
+            <div class="col">
+                <span class="featuredHeader border py-1 px-3">Our Blogs</span>
+            </div>
+        </div>
+        <div class="row blogs py-3">
+            <div class="col">
+                <div class="swiper w-100 swiper-2" style="height:520px;">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card d-flex align-items-center border-0 rounded-0" style="width: 17rem;">
+                                <div class="image">
+                                    <img src="image/blog-1.jpg" alt="...">
+                                </div>
+                                <div class="card-body mt-2 px-4">
+                                    <h5 class="card-title">Blog Title Gose Here</h5>
+                                    <p class="card-text">
+                                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Inventore, Magnam?
+                                    </p>
+                                    <button class="btn btn-lg px-4">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card d-flex align-items-center border-0 rounded-0" style="width: 17rem;">
+                                <div class="image">
+                                    <img src="image/blog-2.jpg" alt="...">
+                                </div>
+                                <div class="card-body mt-2 px-4">
+                                    <h5 class="card-title">Blog Title Gose Here</h5>
+                                    <p class="card-text">
+                                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Inventore, Magnam?
+                                    </p>
+                                    <button class="btn btn-lg px-4">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card d-flex align-items-center border-0 rounded-0" style="width: 17rem;">
+                                <div class="image">
+                                    <img src="image/blog-3.jpg" alt="...">
+                                </div>
+                                <div class="card-body mt-2 px-4">
+                                    <h5 class="card-title">Blog Title Gose Here</h5>
+                                    <p class="card-text">
+                                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Inventore, Magnam?
+                                    </p>
+                                    <button class="btn btn-lg px-4">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card d-flex align-items-center border-0 rounded-0" style="width: 17rem;">
+                                <div class="image">
+                                    <img src="image/blog-4.jpg" alt="...">
+                                </div>
+                                <div class="card-body mt-2 px-4">
+                                    <h5 class="card-title">Blog Title Gose Here</h5>
+                                    <p class="card-text">
+                                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Inventore, Magnam?
+                                    </p>
+                                    <button class="btn btn-lg px-4">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card d-flex align-items-center border-0 rounded-0" style="width: 17rem;">
+                                <div class="image">
+                                    <img src="image/blog-5.jpg" alt="...">
+                                </div>
+                                <div class="card-body mt-2 px-4">
+                                    <h5 class="card-title">Blog Title Gose Here</h5>
+                                    <p class="card-text">
+                                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Inventore, Magnam?
+                                    </p>
+                                    <button class="btn btn-lg px-4">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+
+            // Default parameters
+            slidesPerView: 1,
+            spaceBetween: 0,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1.75,
+                    spaceBetween: 0
+                },
+                // when window width is >= 576px
+                576: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 50
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                // when window width is >= 992px
+                992: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 0
+                },
+                // when window width is >= 1200px
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 0
+                }
+            }
+
+        });
+
+
+        const swiper2 = new Swiper('.swiper-2', {
+            // Default parameters
+            slidesPerView: 1,
+            spaceBetween: 0,
+            // Responsive breakpoints
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.25,
+                    spaceBetween: 0
+                },
+                576: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 0
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 0
+                },
+                992: {
+                    slidesPerView: 3.25,
+                    spaceBetween: 0
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 0
+                }
+            }
+
+        });
+
+        const swiper3 = new Swiper('.swiper-3', {
+
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 576px
+                576: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 0
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                },
+                // when window width is >= 992px
+                992: {
+                    slidesPerView: 2.75,
+                    spaceBetween: 0
+                },
+                // when window width is >= 992px
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 0
+                }
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
