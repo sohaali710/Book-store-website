@@ -57,53 +57,53 @@
     <nav class="navbar navbar-expand-md py-0">
         <div class="container-fluid p-0">
             <button
-                class="navbar-toggler d-md-none position-fixed bottom-0 border-0 rounded-0 w-100 d-flex justify-content-center"
-                type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
+                class="navbar-toggler d-md-none position-sticky bottom-0 border-0 rounded-0 w-100 d-flex justify-content-center"
+                type="button">
                 <ul class="navbar-nav text-center d-flex flex-row">
                     <li class="nav-item">
-                        <a class="nav-link text-light fs-5" aria-current="page" href="#main-card" style="width: 60px;">
+                        <a class="nav-link text-light fs-5" aria-current="page" href="#home" style="width: 60px;">
                             <i class="fa-solid fa-house-chimney text-white"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light fs-5" href="#" style="width: 60px;">
+                    <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <a class="nav-link text-light fs-5" href="#" onclick="return false;" style="width: 60px;">
                             <i class="fa-solid fa-list"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light fs-5" href="#" style="width: 60px;">
+                        <a class="nav-link text-light fs-5" href="#features" style="width: 60px;">
                             <i class="fa-solid fa-tags"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light fs-5" href="#" style="width: 60px;">
+                        <a class="nav-link text-light fs-5" href="#reviews" style="width: 60px;">
                             <i class="fa-solid fa-comments"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light fs-5" href="#" style="width: 60px;">
+                        <a class="nav-link text-light fs-5" href="#blogs" style="width: 60px;">
                             <i class="fa-solid fa-blog"></i>
                         </a>
                     </li>
                 </ul>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav largeNav text-center w-100 justify-content-center">
+                <ul class="navbar-nav largeNav px-5 pb-2 w-100 justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link text-light fs-5 me-3" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-light fs-5 me-3 ps-2" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light fs-5 me-3" href="#">Features</a>
+                        <a class="nav-link text-light fs-5 me-3 ps-2" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light fs-5 me-3" href="#">Arrivals</a>
+                        <a class="nav-link text-light fs-5 me-3 ps-2" href="#arrivals">Arrivals</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light fs-5 me-3" href="#">Reviews</a>
+                        <a class="nav-link text-light fs-5 me-3 ps-2" href="#reviews">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light fs-5" href="#">Blogs</a>
+                        <a class="nav-link text-light fs-5 ps-2" href="#blogs">Blogs</a>
                     </li>
                 </ul>
             </div>
@@ -112,11 +112,11 @@
     <!-- </header> -->
 
 
-    <section class="container-fluid" style="background: url(image/banner-bg.jpg);">
+    <section class="container-fluid" style="background: url(image/banner-bg.jpg);" id="home">
         <div class="container">
             <div class="row py-5">
                 <div class="col-12 text-center text-lg-start col-lg-6 py-5">
-                    <div class="card border-0 w-100 bg-transparent main-card" id="main-card" style="width: 18rem;">
+                    <div class="card border-0 w-100 bg-transparent main-card" style="width: 18rem;">
                         <div class="card-body">
                             <h3 class="card-title">Upto 75% Off</h3>
                             <p class="card-text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Maxime Nam
@@ -222,7 +222,7 @@
     </section>
 
 
-    <section class="container border-top my-5 px-5 px-md-0">
+    <section class="container border-top my-5 px-5 px-md-0" id="features">
         <div class="row text-center">
             <div class="col">
                 <span class="featuredHeader border py-1 px-3">Featured Books</span>
@@ -480,7 +480,7 @@
     </section>
 
 
-    <section class="container border-top mb-3" style="margin-top:70px;">
+    <section class="container border-top mb-3" style="margin-top:70px;" id="arrivals">
         <div class="row text-center">
             <div class="col">
                 <span class="featuredHeader border py-1 px-3">New Arrivals</span>
@@ -720,7 +720,7 @@
         <div class="container">
             <div class="row py-5">
                 <div class="col-12 text-center text-lg-start col-lg-6 py-4">
-                    <div class="card border-0 w-100 bg-transparent main-card" id="main-card" style="width: 18rem;">
+                    <div class="card border-0 w-100 bg-transparent main-card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-subtitle">Deal Of The Day</h5>
                             <h3 class="card-title">Upto 75% Off</h3>
@@ -738,7 +738,7 @@
     </section>
 
 
-    <section class="container reviews border-top my-5 px-5 px-md-0">
+    <section class="container reviews border-top my-5 px-5 px-md-0" id="reviews">
         <div class="row text-center">
             <div class="col">
                 <span class="reviewsHeader border py-1 px-3">Client's Reviews</span>
@@ -877,7 +877,7 @@
         </div>
     </section>
 
-    <section class="container blogs border-top mb-5 px-5 px-md-0" style="margin-top:80px;">
+    <section class="container blogs border-top mb-5 px-5 px-md-0" style="margin-top:80px;" id="blogs">
         <div class="row text-center">
             <div class="col">
                 <span class="featuredHeader border py-1 px-3">Our Blogs</span>
@@ -1002,16 +1002,19 @@
                 <div class="col-12 col-md-3">
                     <h4>Contact Info</h4>
                     <ul class="contacts">
-                        <li><a href="" class="text-muted"><i class="fa-solid fa-phone-flip"></i>+123-456-7890</a></li>
-                        <li><a href="" class="text-muted"><i class="fa-solid fa-phone-flip"></i>+123-456-7890</a></li>
-                        <li><a href="" class="text-muted"><i class="fa-solid fa-envelope"></i>Demo@demo.Com</a></li>
+                        <li class="ms-3 ms-md-2"><a href="" class="text-muted"><i
+                                    class="fa-solid fa-phone-flip"></i>+123-456-7890</a></li>
+                        <li class="ms-3 ms-md-2"><a href="" class="text-muted"><i
+                                    class="fa-solid fa-phone-flip"></i>+123-456-7890</a></li>
+                        <li class="ms-3 ms-md-2"><a href="" class="text-muted"><i
+                                    class="fa-solid fa-envelope"></i>Demo@demo.Com</a></li>
                     </ul>
-                    <img src="./image/worldmap.png" alt="">
+                    <img src="./image/worldmap.png" class="img-fluid" alt="">
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-4 offset-4 social my-4">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 social my-4">
                     <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -1086,14 +1089,14 @@
             spaceBetween: 0,
             // Responsive breakpoints
             breakpoints: {
-                320: {
-                    slidesPerView: 1.25,
-                    spaceBetween: 0
-                },
-                576: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 0
-                },
+                // 320: {
+                //     slidesPerView: 1,
+                //     spaceBetween: 0
+                // },
+                // 576: {
+                //     slidesPerView: 1,
+                //     spaceBetween: 0
+                // },
                 768: {
                     slidesPerView: 2.5,
                     spaceBetween: 0
