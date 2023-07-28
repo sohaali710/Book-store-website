@@ -380,7 +380,7 @@ footer li:hover {
 }
 
 footer .links li::before {
-    content: url('image/arrow-right-solid.svg');
+    content: url('assets/image/arrow-right-solid.svg');
 
     margin-right: 10px;
 
